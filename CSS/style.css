@@ -1,0 +1,9 @@
+.img {
+    border-radius: 30px;
+}
+
+.carrocel {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+}

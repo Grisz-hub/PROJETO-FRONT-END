@@ -1,88 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../CSS/style.css">
-        <title>CineIndex</title>
-    </head>
-    <body bgcolor="#000000" text="#FFFFFF" link="#ffffff" alink="#ffffff">
-        <header align="center">
-            <table width="100%">
-                <tr>
-                    <td><img src="../IMG/capa.png" width="100%" alt="" border="1" class="img"></td>
-                    <td><h1></h1></td>
-                </tr>
-            </table>
-            <form action="" autocomplete="off" method="get" align="center">
-            <label for="v1">BUSCA:</label>
-            <input type="text" name="q" value placeholder="DIGITE SUA BUSCA" id="v1">
-            <input type="submit" Value="Buscar">
-            <hr>
-            <table align="center">
-                <tr>
-                    <td colspan="2">
-                        <nav>
-                            <a href="../index.html">HOME</a> |
-                            <a href="../HTML/index.html">FAVORITOS</a> |
-                            <a href="../CSS/index.html">MINHA LISTA</a> |
-                            <a href="../JS/index.html">LOGIN</a> |
-                            <a href="../PHP/index.php">CADASTRO</a> 
-                        </nav>
-                    </td>
-            </table>
-        </header>
-        <hr>
-                <div class="carrocel">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <div class="slides">
-                <img src="../IMG/teste.png" alt="Filme 1" width="240" class="img">
-                <img src="../IMG/teste.png" alt="Filme 2" width="240" class="img">
-                <img src="../IMG/teste.png" alt="Filme 3" width="240" class="img">
-            </div>
-            <div class="botoes">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-            </div>
-        </div>
-        <h1 align="center">Recomendados:</h1>
-            <table align="center" width="100%" border="0">
-                <tr>
-                    <td><a href="teste1.html" target="">
-                        <img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></a></td>
-                    <td><a href="teste1.html">
-                        <img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></a></td>
-                    <td><a href="teste1.html">
-                        <img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></a></td>
-                    <td><a href="teste1.html">
-                        <img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></a></td>
-                    
-                </tr>
-            </table>
-            <h1 align="center">Mais Vistos:</h1>
-            <table align="center" width="100%" border="0">
-                <tr>
-                    <td><img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></td>
-                    <td><img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></td>
-                    <td><img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></td>
-                </tr>
-            </table>
-            <h1 align="center">Drama:</h1>
-            <table align="center" width="100%" border="0">
-                <tr>
-                    <td><img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></td>
-                    <td><img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></td>
-                    <td><img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></td>
-                </tr>
-            </table>
-            <h1 align="center">Ação:</h1>
-            <table align="center" width="100%" border="0">
-                <tr>
-                    <td><img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></td>
-                    <td><img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></td>
-                    <td><img src="../IMG/teste.png" width="400px" alt="" border="1" class="img"></td>
-                </tr>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineIndex</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body bgcolor="#000000" text="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF" alink="#FF3333">
+<header align="center">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center">
+                <img src="../IMG/capa.png" width="100%" height="300" alt="Capa CineIndex">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <form action="index.html" method="get" align="center">
+        <b>BUSCA:</b>
+        <input type="search" name="q" size="35" placeholder="Digite o nome do filme">
+        <input type="submit" value="Buscar">
+    </form>
+
+    <br>
+
+    <hr color="#333333">
+    <nav align="center">
+    <a href="index.html"><font color="#FF3333">HOME</font></a> |
+    <a href="#">FAVORITOS</a> |
+    <a href="#">MINHA LISTA</a> |
+    <a href="login.html">LOGIN</a> |
+    <a href="cadastro.html">CADASTRO</a>
+</nav>
+
+    <br>
+</header>
+
+<main>
+
+    <h1 align="center">Em destaque</h1>
+    <table align="center" width="70%" bgcolor="#171717" cellspacing="0" cellpadding="25" border="0">
+        <tr>
+            <td width="30%" align="center">
+                <img src="../IMG/duna.jpg" width="200" alt="Pôster de Duna: Parte Dois">
+            </td>
+            <td width="70%" align="left">
+                <font color="#FF3333"><b>DESTAQUE</b></font>
+                <h2>Duna: Parte Dois</h2>
+                <font color="#AAAAAA">2024 · Ficção científica · Aventura</font>
+                <p>
+                    Paul Atreides se une a Chani e aos Fremen enquanto enfrenta
+                    escolhas que podem mudar o futuro de Arrakis.
+                </p>
+                <table bgcolor="#C91818" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td><a href="duna.html">Ver filme</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2 align="center">Recomendados</h2>
+    <table align="center" width="90%" border="0" cellspacing="15" cellpadding="10">
+        <tr>
+            <td width="25%" align="center" bgcolor="#151515">
+                <a href="interstellar.html">
+                    <img src="../IMG/interstellar.jpg" width="200" height="300" alt="Interestelar">
+                </a>
+                <h3><a href="interstellar.html">Interestelar</a></h3>
+                <font color="#AAAAAA">2014 · Ficção científica</font>
+            </td>
+            <td width="25%" align="center" bgcolor="#151515">
+                <a href="duna2.html">
+                    <img src="../IMG/duna2.jpg" width="200" height="300" alt="Duna: Parte Dois">
+                </a>
+                <h3><a href="duna2.html">Duna: Parte Dois</a></h3>
+                <font color="#AAAAAA">2024 · Ficção científica</font>
+            </td>
+            <td width="25%" align="center" bgcolor="#151515">
+                <a href="origem.html">
+                    <img src="../IMG/aorigem.jpg" width="200" height="300" alt="A Origem">
+                </a>
+                <h3><a href="origem.html">A Origem</a></h3>
+                <font color="#AAAAAA">2010 · Ficção científica</font>
+            </td>
+            <td width="25%" align="center" bgcolor="#151515">
+                <a href="batman.html">
+                    <img src="../IMG/batman.jpg" width="200" height="300" alt="Batman">
+                </a>
+                <h3><a href="batman.html">Batman: O Cavaleiro das Trevas</a></h3>
+                <font color="#AAAAAA">2008 · Ação</font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2 align="center">Mais Vistos</h2>
+    <table align="center" width="75%" border="0" cellspacing="15" cellpadding="10">
+        <tr>
+            <td width="33%" align="center" bgcolor="#151515">
+                <a href="duna2.html">
+                    <img src="../IMG/duna2.jpg" width="200" height="300">
+                </a>
+                <h3><a href="duna2.html">Duna: Parte Dois</a></h3>
+                <font color="#AAAAAA">2024 · Ficção científica</font>
+            </td>
+            <td width="33%" align="center" bgcolor="#151515">
+                <a href="batman.html">
+                    <img src="../IMG/batman.jpg" width="200" height="300">
+                </a>
+                <h3><a href="batman.html">Batman: O Cavaleiro das Trevas</a></h3>
+                <font color="#AAAAAA">2008 · Ação</font>
+            </td>
+            <td width="33%" align="center" bgcolor="#151515">
+                <a href="sonho-liberdade.html">
+                    <img src="../IMG/sonho.jpg" width="200" height="300">
+                </a>
+                <h3><a href="sonho-liberdade.html">Um Sonho de Liberdade</a></h3>
+                <font color="#AAAAAA">1994 · Drama</font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2 align="center">Drama</h2>
+    <table align="center" width="75%" border="0" cellspacing="15" cellpadding="10">
+        <tr>
+            <td width="33%" align="center" bgcolor="#151515">
+                <a href="sonho-liberdade.html">
+                    <img src="../IMG/sonho.jpg" width="200" height="300">
+                </a>
+                <h3><a href="sonho-liberdade.html">Um Sonho de Liberdade</a></h3>
+                <font color="#AAAAAA">1994 · Drama</font>
+            </td>
+            <td width="33%" align="center" bgcolor="#151515">
+                <a href="espera-milagre.html">
+                    <img src="../IMG/milagre.png" width="200" height="300">
+                </a>
+                <h3><a href="espera-milagre.html">À Espera de um Milagre</a></h3>
+                <font color="#AAAAAA">1999 · Drama</font>
+            </td>
+            <td width="33%" align="center" bgcolor="#151515">
+                <a href="interstellar.html">
+                    <img src="../IMG/interstellar.jpg" width="200" height="300">
+                </a>
+                <h3><a href="interstellar.html">Interestelar</a></h3>
+                <font color="#AAAAAA">2014 · Ficção científica</font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+    
+    <h2 align="center">Ação</h2>
+    <table align="center" width="75%" border="0" cellspacing="15" cellpadding="10">
+        <tr>
+            <td width="33%" align="center" bgcolor="#151515">
+                <a href="batman.html">
+                    <img src="../IMG/batman.jpg" width="200" height="300">
+                </a>
+                <h3><a href="batman.html">Batman: O Cavaleiro das Trevas</a></h3>
+                <font color="#AAAAAA">2008 · Ação</font>
+            </td>
+            <td width="33%" align="center" bgcolor="#151515">
+                <a href="origem.html">
+                    <img src="../IMG/aorigem.jpg" width="200" height="300">
+                </a>
+                <h3><a href="origem.html">A Origem</a></h3>
+                <font color="#AAAAAA">2010 · Ficção científica</font>
+            </td>
+            <td width="33%" align="center" bgcolor="#151515">
+                <a href="duna2.html">
+                    <img src="../IMG/duna2.jpg" width="200" height="300">
+                </a>
+                <h3><a href="duna2.html">Duna: Parte Dois</a></h3>
+                <font color="#AAAAAA">2024 · Ficção científica</font>
+            </td>
+        </tr>
+    </table>
+
+</main>
+</body>
 </html>

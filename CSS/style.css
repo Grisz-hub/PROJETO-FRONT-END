@@ -1,4 +1,15 @@
 body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #111111;
+body {
     background-color: #222;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -110,6 +121,18 @@ main {
 }
 .img {
     border-radius: 30px;
+}
+
+footer {
+    background-color: #111111;
+}
+nav a {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+h3 a:hover {
+    color: #ff3333;
 }
 .capa {
     width: 400px;

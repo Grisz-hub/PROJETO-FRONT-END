@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/button.js"></script>
+</head>
+<body>
+    <div class="config-page">
+        <aside class="config-sidebar">
+            <div>
+                <div class="config-brand">CineIndex</div>
+                <nav class="config-menu">
+                    <a href="index.html">Início</a>
+                    <a href="perfil.html">Perfil</a>
+                    <a href="config.html" class="active">Configurações</a>
+                    <a href="sobre-nos.html">Sobre nós</a>
+                </nav>
+            </div>
+            <button class="config-logout">Sair</button>
+        </aside>
+
+        <main class="config-main">
+
+            <section class="config-grid">
+                <div class="config-card">
+                    <h2>Conta</h2>
+
+                    <div class="config-item">
+                        <span>Nome</span>
+                        <strong>Grisz</strong>
+                    </div>
+                    <div class="config-item">
+                        <span>E-mail</span>
+                        <strong>grisz@email.com</strong>
+                    </div>
+                    <div class="config-item">
+                        <span>Idioma</span>
+                        <strong>Português (BR)</strong>
+                    </div>
+                </div>
+
+                <div class="config-card">
+                    <h2>Preferências</h2>
+
+                    <div class="config-item">
+                        <span>Tema escuro</span>
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle" aria-label="Tema escuro" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="config-item">
+                        <span>Reprodução automática</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="config-item">
+                        <span>Qualidade</span>
+                        <strong>Alta</strong>
+                    </div>
+                </div>
+
+                <div class="config-card">
+                    <h2>Notificações</h2>
+
+                    <div class="config-item">
+                        <span>Novos lançamentos</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="config-item">
+                        <span>Resumos semanais</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="config-item">
+                        <span>Avisos de avaliação</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="config-card">
+                    <h2>Privacidade</h2>
+
+                    <div class="config-item">
+                        <span>Perfil público</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="config-item">
+                        <span>Lista compartilhável</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="config-item">
+                        <span>Histórico</span>
+                        <strong>Ativado</strong>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f1720;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    font: inherit;
+}
+
+:focus-visible {
+    outline: 3px solid #ff4565;
+    outline-offset: 3px;
+}
+
+header {
+    background-color: #111111;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: #081016;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+body.sidebar-collapsed .sidebar {
+    transform: translateX(-100%);
+}
+
+main {
+    margin-left: 240px;
+}
+
+body.sidebar-collapsed main {
+    margin-left: 0;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.02);
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 5px;
+    color: #4b4b4b;
+}
+
+.searchinput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.pesquisa label {
+    height: 20px;
+}
+
+.search-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icone-usuario,
+.icone-notificacao {
+    color: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.icone-usuario:hover,
+.icone-notificacao:hover {
+    color: #ff163c;
+}
+
+.icone-usuario:active,
+.icone-notificacao:active {
+    color: #000000;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    color: #ccc;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #171d22;
+    color: white;
+}
+
+.menu-item.ativo {
+    background-color: #3b0d12;
+    color: #ff163c;
+}
+
+.sair {
+    margin-top: auto;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.integrantes-page {
+    margin-left: 240px;
+    padding: 110px 40px 40px;
+    min-height: 100vh;
+}
+
+.integrantes-container {
+    max-width: 900px;
+    background: #11191f;
+    border: 1px solid #2a3137;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.integrantes-container h1 {
+    color: #ff163c;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.integrantes-lista {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 16px;
+    line-height: 1.8;
+}
+
+.integrantes-lista li {
+    background: #1a232b;
+    border: 1px solid rgba(255, 22, 60, 0.3);
+    border-radius: 12px;
+    padding: 16px 18px;
+    color: #f1f1f1;
+}
+
+.integrantes-lista strong {
+    color: #ff163c;
+}
+
+html[data-theme="light"] body {
+    background: #f4f6f8;
+    color: #20242a;
+}
+
+html[data-theme="light"] header {
+    background-color: #fff;
+    color: #20242a;
+}
+
+html[data-theme="light"] .sidebar {
+    background-color: #e8edf1;
+}
+
+html[data-theme="light"] .menu-item {
+    color: #3d454d;
+}
+
+html[data-theme="light"] .menu-item:hover {
+    background-color: #dce3e9;
+    color: #20242a;
+}
+
+html[data-theme="light"] .menu-item.ativo {
+    background-color: #ffe5e9;
+    color: #d90d2e;
+}
+
+html[data-theme="light"] .pesquisa {
+    background-color: #fff;
+    border-color: #c5cbd1;
+    color: #4b4b4b;
+}
+
+html[data-theme="light"] .searchinput {
+    color: #20242a;
+}
+
+html[data-theme="light"] .integrantes-container {
+    background: #fff;
+    color: #20242a;
+}
+
+html[data-theme="light"] .integrantes-lista li {
+    background: #f4f6f8;
+    color: #20242a;
+    border-color: #e1c2c8;
+}
+
+@media (max-width: 700px) {
+    .integrantes-page {
+        margin-left: 0;
+        padding: 120px 20px 30px;
+    }
+
+    .integrantes-lista {
+        grid-template-columns: 1fr;
+    }
+}

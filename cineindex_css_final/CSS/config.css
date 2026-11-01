@@ -1,0 +1,259 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f1720;
+    color: #fff;
+}
+
+body.sidebar-collapsed main {
+    margin-left: 0;
+}
+
+main {
+    margin-left: 240px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    font: inherit;
+}
+
+:focus-visible {
+    outline: 3px solid #ff4565;
+    outline-offset: 3px;
+}
+
+.config-page {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: #0f1720;
+    color: #fff;
+}
+
+.config-sidebar {
+    width: 220px;
+    background: #111b22;
+    border-right: 1px solid #2a323b;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.config-brand {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ff163c;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 70px;
+}
+
+.config-brand img {
+    display: block;
+    width: 185px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.config-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.config-menu a {
+    color: #d9d9d9;
+    padding: 12px 14px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.config-menu a:hover, 
+.config-menu a.active {
+    background: #1d2a31;
+    color: #ffffff;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.config-logout {
+    background: transparent;
+    border: 1px solid #ff163c;
+    color: #ff163c;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.config-main {
+    flex: 1;
+    padding: 40px;
+}
+
+.config-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.config-card {
+    background: #171f26;
+    border: 1px solid #2a323b;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.config-card h2 {
+    color: #ff163c;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.config-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #2a323b;
+}
+
+.config-item:last-child {
+    border-bottom: none;
+}
+
+.config-item span {
+    color: #e9e9e9;
+}
+
+.config-item strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #404b54;
+    border-radius: 34px;
+    transition: 0.2s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    top: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.switch input:checked + .slider {
+    background-color: #ff163c;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(22px);
+}
+
+html[data-theme="light"] body,
+html[data-theme="light"] .config-page {
+    background: #f4f6f8;
+    color: #20242a;
+}
+
+html[data-theme="light"] .config-sidebar {
+    background: #fff;
+    border-color: #d5dbe0;
+}
+
+html[data-theme="light"] .config-menu a {
+    color: #3d454d;
+}
+
+html[data-theme="light"] .config-menu a:hover, 
+html[data-theme="light"] .config-menu a.active {
+    background: #e8edf1;
+    color: #20242a;
+}
+
+html[data-theme="light"] .config-card {
+    background: #fff;
+    color: #20242a;
+    border-color: #d5dbe0;
+}
+
+html[data-theme="light"] .config-item {
+    border-color: #e1e5e9;
+}
+
+html[data-theme="light"] .config-item span, 
+html[data-theme="light"] .config-item strong {
+    color: #303840;
+}
+
+@keyframes carrossel {
+    0%, 30% { transform: translateX(0); }
+    33%, 63% { transform: translateX(-100%); }
+    66%, 96% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+    .config-page {
+        flex-direction: column;
+    }
+
+    .config-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #2a323b;
+    }
+
+    .config-main {
+        padding: 20px;
+    }
+
+    .config-grid {
+        grid-template-columns: 1fr;
+    }
+}

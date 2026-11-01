@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entrar | CineIndex</title>
+    <script src="../JS/button.js" defer></script>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            background: url('../IMG/imagemfundo.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+    <div class="moldura">
+        <div class="cadastro-card">
+            <img src="../IMG/logocineindex.png" alt="Logo CineIndex" width="200" class="logo-cadastro">
+            <h2 class="titulo-cadastro">Entrar</h2>
+
+            <form id="form-login" action="index.html" method="GET">
+                <div class="input-box">
+                    <span class="icon" aria-hidden="true"></span>
+                    <input type="text" name="usuario" placeholder="Usuário" autocomplete="username" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon" aria-hidden="true"></span>
+                    <input type="password" name="senha" placeholder="Senha" autocomplete="current-password" required>
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Lembrar-me
+                    </label>
+                </div>
+                <div class="link">
+                    <a href="#"
+                        onclick="alert('A recuperação de senha ainda não está disponível.'); return false;">Esqueceu a
+                        senha?</a>
+
+                    <button type="submit" class="btn">Entrar </button>
+
+                    <p class="">Ainda não tem uma conta? <a href="cadastro.html">Cadastrar</a></p>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

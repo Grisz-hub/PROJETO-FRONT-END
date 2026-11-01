@@ -1,0 +1,387 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* CSS completo e independente da página avalie.html */
+/* CSS exclusivo de avalie.html: contém os estilos gerais necessários e os estilos próprios desta página. */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #111111;
+}
+
+body {
+    background-color: #222;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: #081016;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #00000006;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 5px;
+    color: #4b4b4b;
+}
+
+.searchinput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.pesquisa label {
+    height: 20px;
+}
+
+.icone-usuario,
+.icone-notificacao {
+    color: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.icone-usuario:hover,
+.icone-notificacao:hover {
+    color: #ff163c;
+}
+
+.icone-usuario:active,
+.icone-notificacao:active {
+    color: #000000;
+}
+
+main {
+    margin-left: 240px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #171d22;
+    color: white;
+}
+
+.menu-item.ativo {
+    background-color: #3b0d12;
+    color: #ff163c;
+}
+
+.sair {
+    margin-top: auto;
+}
+
+nav a {
+    display: inline-block;
+
+    margin: 0 12px;
+}
+
+@keyframes carrossel {
+
+    0%,
+    30% {
+        transform: translateX(0);
+    }
+
+    33%,
+    63% {
+        transform: translateX(-100%);
+    }
+
+    66%,
+    96% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f1720;
+    color: #f5f5f5;
+}
+
+body {
+    background: #0f1720;
+
+    color: #fff;
+}
+
+html[data-theme="light"] body {
+    background: #f4f6f8;
+    color: #20242a;
+}
+
+html[data-theme="light"] header {
+    background-color: #fff;
+    color: #20242a;
+}
+
+html[data-theme="light"] .sidebar {
+    background-color: #e8edf1;
+}
+
+html[data-theme="light"] .menu-item {
+    color: #3d454d;
+}
+
+html[data-theme="light"] .menu-item:hover {
+    background-color: #dce3e9;
+    color: #20242a;
+}
+
+html[data-theme="light"] .menu-item.ativo {
+    background-color: #ffe5e9;
+    color: #d90d2e;
+}
+
+html[data-theme="light"] .pesquisa {
+    background-color: #fff;
+    border-color: #c5cbd1;
+    color: #4b4b4b;
+}
+
+html[data-theme="light"] .searchinput {
+    color: #20242a;
+}
+
+:focus-visible {
+    outline: 3px solid #ff4565;
+    outline-offset: 3px;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.search-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.catalogo-etiqueta {
+    color: #ff4565;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .16em;
+    margin-bottom: 8px;
+}
+
+.review-form button {
+    border: 0;
+    border-radius: 8px;
+    padding: 9px 13px;
+    background: #ff163c;
+    color: white;
+    font-weight: 700;
+}
+
+body.sidebar-collapsed .sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-collapsed main {
+    margin-left: 0;
+}
+
+.sidebar {
+    transition: transform .2s ease;
+}
+
+.reviews-page {
+    margin-left: 240px;
+    padding: 110px 32px 48px;
+}
+
+.reviews-heading {
+    max-width: 760px;
+    margin-bottom: 24px;
+}
+
+.reviews-heading h1 {
+    margin: 0 0 10px;
+    color: #ff163c;
+}
+
+.reviews-heading p:last-child {
+    color: #b8c0c9;
+    line-height: 1.6;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.review-form {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #3b4651;
+    border-radius: 14px;
+    background: #1a232b;
+}
+
+.review-form>img {
+    width: 120px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.review-form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.review-form h2 {
+    font-size: 1.1rem;
+}
+
+.review-form label {
+    font-size: .85rem;
+    color: #d2d8de;
+}
+
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #4a5662;
+    border-radius: 7px;
+    background: #111820;
+    color: #fff;
+}
+
+.review-form textarea {
+    resize: vertical;
+}
+
+html[data-theme="light"] .review-form {
+    background: #fff;
+    color: #20242a;
+}
+
+html[data-theme="light"] .reviews-heading p:last-child,
+html[data-theme="light"] .review-form label {
+    color: #505a64;
+}
+
+html[data-theme="light"] .review-form select,
+html[data-theme="light"] .review-form textarea {
+    background: #f7f8fa;
+    color: #20242a;
+    border-color: #c5cbd1;
+}
+
+@media (max-width: 900px) {
+    .reviews-page {
+        margin-left: 0;
+        padding: 120px 20px 32px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .review-form {
+        grid-template-columns: 88px minmax(0, 1fr);
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .review-form>img {
+        width: 88px;
+        height: 130px;
+    }
+
+}
+
+.reviews-page {
+    padding-top: 112px;
+}
+
+.review-form {
+    align-items: start;
+}

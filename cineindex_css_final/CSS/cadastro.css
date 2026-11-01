@@ -1,0 +1,170 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #222;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+.moldura {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-card {
+    width: 300px;
+    background: #00000006;
+    border: 1px solid #ff163c;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 #3b0d12;
+    backdrop-filter: blur(5px);
+}
+
+.titulo-cadastro {
+    text-align: center;
+    color: #ff163c;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 20px;
+    background-color: #00000006;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    flex: 1;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00000006;
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff163c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.link {
+    color: #ff163c;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.logo-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f1720;
+    color: #f5f5f5;
+}
+
+body {
+    background: #0f1720;
+    color: #fff;
+}
+
+html[data-theme="light"] body {
+    background: #f4f6f8;
+
+    color: #20242a;
+}
+
+html[data-theme="light"] .cadastro-card {
+    background: #fff;
+    color: #20242a;
+}
+
+html[data-theme="light"] .input-box,
+html[data-theme="light"] .input-box input {
+    background-color: #eef1f4;
+    color: #20242a;
+}
+
+:focus-visible {
+    outline: 3px solid #ff4565;
+    outline-offset: 3px;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+body.sidebar-collapsed main {
+    margin-left: 0;
+}
+
+@media (max-width: 600px) {}
+
+.logo-cadastro {
+    display: block;
+    width: min(200px, 80%);
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 20px;
+}

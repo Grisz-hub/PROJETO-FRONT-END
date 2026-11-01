@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineIndex | Filmes</title>
+
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src="../JS/button.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <table width="100%" border="0">
+            <tr>
+                <td width="25%">
+                    <div class="logo-area">
+                        <input type="checkbox" id="menu-toggle" checked>
+                        <label for="menu-toggle" class="menu-toggle-label" aria-label="Alternar menu lateral">☰</label>
+
+                        <a href="index.html">
+                            <img src="../IMG/logocineindex.png" alt="Logo CineIndex" width="200">
+                        </a>
+                    </div>
+                </td>
+
+                <td align="left" width="50%">
+                    <div class="pesquisa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+
+                        <input type="text" id="searchinput" class="searchinput" placeholder="Pesquisar..."
+                            aria-label="Pesquisar filmes e conteúdo">
+                    </div>
+                </td>
+
+                <td width="10%" align="right">
+                    <a href="notificacoes.html" aria-label="Notificações">
+                        <svg class="icone-notificacao" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                            <path d="M18 8a6 6 0 0 0-12 0
+                                c0 7-3 7-3 9h18
+                                c0-2-3-2-3-9"></path>
+
+                            <path d="M13.73 21
+                                a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                    </a>
+                </td>
+
+                <td width="15%" align="center" class="icone-usuario">
+                    <a href="perfil.html" aria-label="Meu perfil">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                            <path d="M20 21a8 8 0 0 0-16 0"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <aside class="sidebar">
+        <nav class="menu">
+
+            <a href="index.html" class="menu-item ativo">
+                <span>Início</span>
+            </a>
+
+            <a href="#filmes" class="menu-item">
+                <span>Filmes</span>
+            </a>
+
+            <a href="#series" class="menu-item">
+                <span>Séries</span>
+            </a>
+
+            <a href="lista.html" class="menu-item">
+                <span>Minha Lista</span>
+            </a>
+
+            <a href="minhas-avaliacoes.html" class="menu-item">
+                <span>Minhas avaliações</span>
+            </a>
+
+            <a href="avalie.html" class="menu-item">
+                <span>Avaliações</span>
+            </a>
+
+            <a href="sobre-nos.html" class="menu-item">
+                <span>Sobre nós</span>
+            </a>
+
+            <hr>
+
+            <a href="perfil.html" class="menu-item">
+                <span>Perfil</span>
+            </a>
+
+            <a href="config.html" class="menu-item">
+                <span>Configurações</span>
+            </a>
+        </nav>
+
+        <a href="login.html" class="menu-item sair">
+            ↪ <span>Sair</span>
+        </a>
+    </aside>
+
+
+    <main class="home-catalogo">
+
+        <!-- DESTAQUES -->
+        <section id="destaques" class="catalogo-secao">
+            <div class="catalogo-titulo">
+                <p class="catalogo-etiqueta">ESCOLHAS DA EQUIPE</p>
+                <h1 class="destaque">Destaques da semana</h1>
+            </div>
+
+            <div class="catalogo-grid catalogo-grid-destaques">
+                <article class="catalogo-card" data-title="Duna">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/McKwDEvmnliFQsmqjF7Fy0RoGY.jpg"
+                            alt="Duna" class="destaque-img">
+                        <h3>Cara-de-Barro </h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Interestelar">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg"
+                            alt="Interestelar" class="destaque-img">
+                        <h3>Lupim</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="jogosvorazes">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/ibZ6GSHtCeC7fLDJ2uyXNemgYwr.jpg"
+                            alt="jogosvorazes" class="destaque-img">
+                        <h3>Jogos Vorazes: Amanhecer na Colheita</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="A Origem">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg"
+                            alt="A Origem" class="destaque-img">
+                        <h3>VisionQuest</h3>
+                    </a>
+                </article>
+
+
+                <div class="catalogo-card">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_face/x0nvYzQpyJc5pdT9lMnkMuYAg0O.jpg"
+                        alt="Homem-Aranha: Sem Volta Para Casa" class="destaque-img">
+                    <div class="catalogo-info">
+                        <h3>Homem-Aranha: Um Novo Dia</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FILMES RECOMENDADOS -->
+        <section id="filmes" class="catalogo-secao">
+            <div class="catalogo-titulo">
+                <p class="catalogo-etiqueta">ESCOLHIDOS PARA VOCÊ</p>
+                <h2 class="recomendados">Filmes recomendados</h2>
+            </div>
+
+            <div class="catalogo-grid catalogo-grid-pequeno">
+                <article class="catalogo-card" data-title="Obsessão">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/wUc6IDf5ChjM1UyQye21qFBeJY0.jpg" alt="Obsessão" class="destaque-img">
+                        <h3>Obsessão</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Resident Evil">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/gQ76UL64RQe3oHwiwHwODTC23g4.jpg" alt="Resident Evil" class="destaque-img">
+                        <h3>Resident Evil</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="A Odisseia">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/b82gpDmbbDZGywc0Zq1t2N3wWj5.jpg"
+                            alt="A Odisseia" class="destaque-img">
+                        <h3>A Odisseia</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Clube da Luta">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg" alt="Clube da Luta"
+                            class="destaque-img">
+                        <h3>Clube da Luta</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Interestelar">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/tR1XVa5bxgdh2bRw2u0DzrgkO2l.jpg" alt="Interestelar" class="destaque-img">
+                        <h3>Interestelar</h3>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SÉRIES -->
+        <section id="series" class="catalogo-secao">
+            <div class="catalogo-titulo">
+                <p class="catalogo-etiqueta">MARATONAR É AQUI</p>
+                <h2 class="recomendados">Séries populares</h2>
+            </div>
+
+            <div class="catalogo-grid catalogo-grid-pequeno">
+                <article class="catalogo-card" data-title="Breaking Bad">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="Breaking Bad"
+                            class="destaque-img">
+                        <h3>Breaking Bad</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Stranger Things">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="Stranger Things"
+                            class="destaque-img">
+                        <h3>Stranger Things</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="The Last of Us">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="The Last of Us"
+                            class="destaque-img">
+                        <h3>The Last of Us</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Sobrenatural ">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/ovFzkkKknAo2SbM2DfOabxRvzmy.jpg" alt="Sobrenatural "
+                            class="destaque-img">
+                        <h3>Sobrenatural </h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="The Office">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg" alt="The Office"
+                            class="destaque-img">
+                        <h3>The Office</h3>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ANIMAÇÕES -->
+        <section id="animacoes" class="catalogo-secao">
+            <div class="catalogo-titulo">
+                <p class="catalogo-etiqueta">PARA TODAS AS IDADES</p>
+                <h2 class="recomendados">Animações e animes</h2>
+            </div>
+
+            <div class="catalogo-grid catalogo-grid-pequeno">
+                <article class="catalogo-card" data-title="Homem-Aranha Através do Aranhaverso">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg"
+                            alt="Homem-Aranha: Através do Aranhaverso" class="destaque-img">
+                        <h3>Homem-Aranha: Através do Aranhaverso</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Coraline e o Mundo Secreto">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/rranXmvqPT4NoXzmxhFtXr9nNYT.jpg"
+                            alt="Coraline e o Mundo Secreto" class="destaque-img">
+                        <h3>Coraline e o Mundo Secreto</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Rango">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/e5kYzP2hljfdooEzl1lskWn7yoj.jpg"
+                            alt="Rango" class="destaque-img">
+                        <h3>Rango</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Tá Dando Onda">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/edR3BjwAwUGHtOQMXJTWRfMYBvt.jpg"
+                            alt="Tá Dando Onda" class="destaque-img">
+                        <h3>Tá Dando Onda</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Solo Leveling">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/a7i9OdTUo9jZ1XoraCRIQNJ6ACX.jpg" alt="Solo Leveling" class="destaque-img">
+                        <h3>Solo Leveling</h3>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- TERROR E SUSPENSE -->
+        <section id="terror" class="catalogo-secao">
+            <div class="catalogo-titulo">
+                <p class="catalogo-etiqueta">PARA QUEM GOSTA DE TENSÃO</p>
+                <h2 class="recomendados">Terror e suspense</h2>
+            </div>
+
+            <div class="catalogo-grid catalogo-grid-pequeno">
+                <article class="catalogo-card" data-title="Invocação do Mal">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/wVYREutTvI2tmxr6ujrHT704wGF.jpg"
+                            alt="Invocação do Mal" class="destaque-img">
+                        <h3>Invocação do Mal</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Corra">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg" alt="Corra!"
+                            class="destaque-img">
+                        <h3>Corra!</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Um Lugar Silencioso">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/nAU74GmpUk7t5iklEp3bufwDq4n.jpg"
+                            alt="Um Lugar Silencioso" class="destaque-img">
+                        <h3>Um Lugar Silencioso</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="A Hora do Mal">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/psEJSjQr6I9GSJTdW28CKC4Kffs.jpg" alt="A Hora do Mal"
+                            class="destaque-img">
+                        <h3>A Hora do Mal</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Pecadores">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/v0Ljeti537c6cNKweuEN0iaU3x4.jpg" alt="Pecadores"
+                            class="destaque-img">
+                        <h3>Pecadores</h3>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- FICÇÃO CIENTÍFICA -->
+        <section id="ficcao" class="catalogo-secao">
+            <div class="catalogo-titulo">
+                <p class="catalogo-etiqueta">OUTROS MUNDOS, OUTRAS REALIDADES</p>
+                <h2 class="recomendados">Ficção científica</h2>
+            </div>
+
+            <div class="catalogo-grid catalogo-grid-pequeno">
+                <article class="catalogo-card" data-title="Matrix">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" alt="Matrix"
+                            class="destaque-img">
+                        <h3>Matrix</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Blade Runner 2049">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+                            alt="Blade Runner 2049" class="destaque-img">
+                        <h3>Blade Runner 2049</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="O Marciano">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/fG3S4zdgnsaF77tJGK3rA9tHBu4.jpg"
+                            alt="Perdido em Marte" class="destaque-img">
+                        <h3>Perdido em Marte</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="Avatar">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg" alt="Avatar"
+                            class="destaque-img">
+                        <h3>Avatar</h3>
+                    </a>
+                </article>
+
+                <article class="catalogo-card" data-title="De Volta para o Futuro">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/w500/7lyBcpYB0Qt8gYhXYaEZUNlNQAv.jpg"
+                            alt="De Volta para o Futuro" class="destaque-img">
+                        <h3>De Volta para o Futuro</h3>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <footer class="rodape">
+            <p>CineIndex — Seu universo de filmes e séries.</p>
+        </footer>
+
+    </main>
+
+
+</body>
+
+</html>
